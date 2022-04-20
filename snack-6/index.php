@@ -22,6 +22,8 @@ $db = [
 		]
 	]
 ];
+$teachers = array_slice($db['teachers'], 0);
+$pm = array_slice($db['pm'], 0) ;
 ?>
 
 <!DOCTYPE html>
@@ -39,8 +41,12 @@ $db = [
 			<h4>Teachers: </h4>
 			<ul>
 				<?php 
-				for ( $i = 0; $i < count($db['teachers']); $i++) {
-					echo '<li>' . ($db['teachers'][$i]['name']) . ' ' . ($db['teachers'][$i]['lastname']) . '</li>' ;
+				for ( $i = 0; $i < count($teachers); $i++) {
+					echo 
+					'<li>' . 
+						$teachers[$i]['name'] . ' ' . 
+						$teachers[$i]['lastname'] . 
+					'</li>' ;
 				}
 				?>
 			</ul>
@@ -49,8 +55,12 @@ $db = [
 		<h4>Pm: </h4>
 			<ul>
 				<?php 
-				for ( $i = 0; $i < count($db['pm']); $i++) {
-					echo '<li>' . ($db['pm'][$i]['name']) . ' ' . ($db['pm'][$i]['lastname']) . '</li>' ;
+				for ( $i = 0; $i < count($pm); $i++) {
+					echo 
+					'<li>' . 
+						$pm[$i]['name'] . ' ' . 
+						$pm[$i]['lastname'] . 
+					'</li>' ;
 				}
 				?>
 			</ul>

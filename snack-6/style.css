@@ -16,11 +16,15 @@ ul {
 	list-style-type: none;
 }
 
+ul li {
+	padding: 0.85rem 0;
+}
+
 .rectangle {
 	color: white;
 	padding: 2rem;
 	height: 25vh;
-	width: 30vh;
+	width: 30vw;
 	border: 1px solid white;
 }
 
