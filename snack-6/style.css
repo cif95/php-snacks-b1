@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	font-family: sans-serif;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.rectangle {
+	color: white;
+	padding: 2rem;
+	height: 25vh;
+	width: 30vh;
+	border: 1px solid white;
+}
+
+main div#teachers {
+	background-color: grey;
+}
+
+main div#pm {
+	background-color: rgb(55, 194, 140);
+}
+
+#teachers h4,
+#pm h4 {
+	margin-bottom: 1.5rem;
+}
