@@ -13,8 +13,8 @@
 	$params = $_GET;
 	if ( 
 			( strlen($params['name']) > 3 ) &&
-			( strpos($params['email'], '.') ) &&
-			( strpos($params['email'], '@') ) &&
+			( !strpos($params['email'], '.') === false ) &&
+			( !strpos($params['email'], '@') === false ) &&
 			( is_numeric($params['age']) )
 		) {
 		$result = "accesso riuscito";

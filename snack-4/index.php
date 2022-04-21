@@ -1,6 +1,6 @@
 <?php 
 	$randomNumbers = [];
-	for ( $i = 0; $i <= 15; $i++) {
+	while ( count($randomNumbers) < 15 ) {
 		$randomInt = rand(0, 1500);
 		if ( !in_array($randomInt, $randomNumbers) ) {
 			array_push( $randomNumbers, $randomInt );
